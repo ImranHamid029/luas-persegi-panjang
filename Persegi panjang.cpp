@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+class PersegiPanjang{
+	private:
+		int panjang;
+		int lebar;
+		public:
+			PersegiPanjang(int panjang, int lebar){
+				this ->panjang = panjang;
+				this ->lebar = lebar;
+			}
+			void setPanjang(int panjang){
+				this -> panjang = panjang;
+			}
+			 void setLebar(int lebar){
+			 	this ->lebar = lebar;
+			 }
+			 int getPanjang(){
+			 	return panjang;
+			 }
+			 int getLebar(){
+			 	return lebar;
+			 }
+			 int Luas(){
+			 	return panjang * lebar;
+			 }
+};
+int main(){
+	PersegiPanjang psg(10,10);
+	cout<<"panjang : "<<psg.getPanjang()<<endl;
+	cout<<"lebar : "<<psg.getLebar()<<endl;
+	cout<<"luas : "<<psg.Luas();
+}
